@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Color__c</fullName>
     <externalId>false</externalId>
+    <inlineHelpText>Helptext for color</inlineHelpText>
     <label>Color</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
