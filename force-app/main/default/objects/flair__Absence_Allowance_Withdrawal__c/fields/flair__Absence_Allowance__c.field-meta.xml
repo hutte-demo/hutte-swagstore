@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flair__Absence_Allowance__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Absence Allowance</label>
+    <referenceTo>flair__Absence_Allowance__c</referenceTo>
+    <relationshipLabel>Absence Allowance Withdrawals</relationshipLabel>
+    <relationshipName>Absence_Allowance_Withdrawals</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
