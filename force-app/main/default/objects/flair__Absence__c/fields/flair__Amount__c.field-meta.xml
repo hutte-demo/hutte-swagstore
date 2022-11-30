@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flair__Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>CASE(flair__Type__c,
+&apos;DAILY&apos;, flair__End_Date__c - flair__Start_Date__c - IF(flair__Start_Date_Half_Day__c, 0.5, 0) - IF(flair__End_Date_Half_Day__c, 0.5, 0) + 1,
+&apos;HOURLY&apos;, (DATETIMEVALUE(TEXT(flair__End_Date__c) &amp; &quot; &quot; &amp; LEFT(TEXT(flair__End_Time__c), FIND(&quot;.&quot;, TEXT(flair__End_Time__c)) - 1)) - DATETIMEVALUE(TEXT(flair__Start_Date__c) &amp; &quot; &quot; &amp; LEFT(TEXT(flair__Start_Time__c), FIND(&quot;.&quot;, TEXT(flair__Start_Time__c)) - 1))) * 24,
+3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Amount help text 2</inlineHelpText>
+    <label>Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
