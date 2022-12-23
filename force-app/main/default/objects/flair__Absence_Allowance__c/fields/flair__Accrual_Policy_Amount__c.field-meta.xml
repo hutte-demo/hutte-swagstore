@@ -3,7 +3,7 @@
     <fullName>flair__Accrual_Policy_Amount__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <inlineHelpText>Help text on accrual policy new</inlineHelpText>
+    <inlineHelpText>Help text update</inlineHelpText>
     <label>Accrual Policy Amount</label>
     <precision>8</precision>
     <required>false</required>
