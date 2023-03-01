@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Product_Family__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>Group products in families, serving as categories</description>
     <externalId>false</externalId>
     <label>Product Family</label>
     <referenceTo>Product_Family__c</referenceTo>
